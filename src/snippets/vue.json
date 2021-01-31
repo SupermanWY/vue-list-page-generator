@@ -1,0 +1,38 @@
+{
+  "console.打印": {
+    "prefix": "colo",
+    "body": [
+      "console.log($0)"
+    ],
+    "description": "console打印"
+  },
+  "console.打印2": {
+    "prefix": "ajax",
+    "body": [
+      "$.ajax({",
+      "    url: '$1',",
+      "    method: '${2:POST}',",
+      "    datatype: 'json',",
+      "    success: data => {",
+      "        $3;",
+      "    },",
+      "    error: err => {",
+      "        $4;",
+      "    }",
+      "})"
+    ],
+    "description": "ajax模块"
+  },
+  "大区": {
+    "prefix": "adress-s",
+    "body": [
+      "<el-form-item label='所属大区' :prop='$1'>",
+      "    <el-select v-model='$2' clearable placeholder='请选择所属大区'>",
+      "        <el-option label='东北大区 :value='$3' />",
+      "        <el-option label='华北大区 :value='$4' />",
+      "    </el-select>",
+      "</el-form-item>"
+    ],
+    "description": "大区"
+  }
+}
